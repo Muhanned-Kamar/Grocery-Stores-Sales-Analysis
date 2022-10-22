@@ -1,15 +1,13 @@
 # Used Microsoft SQL Server for the Joining process 
+USE Operations
 
-      USE Operations
+    SELECT *
+    FROM Sales
 
+    SELECT * 
+    FROM Cashier
 
-      SELECT *
-      FROM Sales
-
-      SELECT * 
-      FROM Cashier
-
-      SELECT *
-      FROM Sales as sa
-      JOIN Cashier as ca
-	        ON sa.CashierNumber = ca.CashierNumber
+    SELECT *
+    FROM Sales as sa
+    JOIN Cashier as ca
+        ON sa.CashierNumber = ca.CashierNumber
